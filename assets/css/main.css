@@ -1,0 +1,501 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  background-color: lightgrey;
+  overflow-x: hidden;
+}
+
+/* Navbar container */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 33% 33% 33%;
+      grid-template-columns: 33% 33% 33%;
+}
+
+.navbar svg {
+  width: 20%;
+  padding-top: 2%;
+  padding-left: 4%;
+  padding-bottom: 2%;
+}
+
+.navbar .linkscontainer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  padding-top: 2%;
+}
+
+.navbar h2 {
+  text-align: center;
+  font-size: 40px;
+  color: #f9f9f9;
+  font-family: "Roboto Condensed";
+  margin: 0;
+  padding-top: 4%;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  font-size: 24px;
+  color: #f9f9f9;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: "Roboto Condensed";
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 24px;
+  border: none;
+  outline: none;
+  color: #f9f9f9;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  /* Important for vertical align on mobile phones */
+  margin: 0;
+  /* Important for vertical align on mobile phones */
+  font-family: "Roboto Condensed";
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #333;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+main {
+  width: 90%;
+  margin: auto;
+  /* Slideshow container */
+  /* Hide the images by default */
+  /* Next & previous buttons */
+  /* Position the "next button" to the right */
+  /* On hover, add a black background color with a little bit see-through */
+  /* Caption text */
+  /* Number text (1/3 etc) */
+  /* The dots/bullets/indicators */
+  /* Fading animation */
+}
+
+main .slideshow-container {
+  padding-top: 0.5%;
+  max-width: 85%;
+  position: relative;
+  margin: auto;
+}
+
+main .mySlides {
+  display: none;
+}
+
+main .prev, main .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-family: "Roboto Condensed";
+}
+
+main .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+main .prev:hover, main .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+main .text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  font-family: "Roboto Condensed";
+}
+
+main .numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  font-family: "Roboto Condensed";
+}
+
+main .dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  -webkit-transition: background-color 0.6s ease;
+  transition: background-color 0.6s ease;
+}
+
+main .active, main .dot:hover {
+  background-color: #717171;
+}
+
+main .fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.newonshelvestext {
+  text-align: center;
+  font-family: "Roboto Condensed";
+  font-size: 40px;
+  font-weight: lighter;
+}
+
+.newonshelves {
+  background-color: lightgrey;
+}
+
+.newonshelves .shelfcontainer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  padding: 2%;
+  background-color: #f9f9f9;
+  margin-top: 2%;
+}
+
+.newonshelves .shelfcontainer article {
+  font-family: "Roboto Condensed";
+  font-size: 24px;
+  color: black;
+}
+
+.newonshelves .shelfcontainer img {
+  width: 40%;
+  margin: auto;
+}
+
+.bookingwrapper {
+  width: 80%;
+  margin: auto;
+}
+
+.bookingwrapper .bookheader {
+  font-family: "Roboto Condensed";
+  color: "lightblue";
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 400;
+  margin-top: 8%;
+}
+
+.bookingwrapper .bookingsection {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  margin: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 16px;
+}
+
+.bookingwrapper .bookingsection .contactfigure {
+  width: 100%;
+}
+
+.bookingwrapper .bookingsection .contactfigure img {
+  width: 100%;
+}
+
+.bookingwrapper .bookingsection .bookingform {
+  display: -ms-grid;
+  display: grid;
+  gap: 16px;
+  width: 90%;
+  margin: auto;
+  margin-top: 4%;
+}
+
+.bookingwrapper .bookingsection .bookingform p {
+  font-family: "Roboto Condensed";
+  font-size: 24px;
+}
+
+.bookingwrapper .bookingsection .bookingform #inputcontainer {
+  display: -ms-grid;
+  display: grid;
+  gap: 16px;
+}
+
+.bookingwrapper .bookingsection .bookingform #inputcontainer input {
+  height: 48px;
+  font-family: "Roboto Condensed";
+  font-size: medium;
+  border-radius: 15px;
+  padding-left: 8px;
+  border: 2px solid "black";
+}
+
+.bookingwrapper .bookingsection .bookingform #inputcontainer textarea {
+  font-family: "Roboto Condensed";
+  font-size: 16px;
+  border: 2px solid "black";
+  border-radius: 15px;
+  padding-left: 8px;
+}
+
+.bookingwrapper .bookingsection .bookingform .errorwrapper {
+  font-family: "Roboto Condensed";
+  font-size: medium;
+  color: "black";
+}
+
+.bookingwrapper .bookingsection .bookingform button {
+  width: 100%;
+  border-radius: 15px;
+  height: 48px;
+  border: 2px solid "black";
+  font-size: 1.5rem;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.bookingwrapper .bookingsection .bookingform .remindtext {
+  font-family: "Roboto Condensed";
+  font-size: 1rem;
+  text-align: center;
+  font-weight: bold;
+  color: "black";
+}
+
+.bookingwrapper .bookingsection .redirecttext {
+  font-family: "Roboto Condensed";
+  text-align: center;
+  font-size: 1rem;
+}
+
+footer {
+  margin-top: 5%;
+  font-family: "Roboto Condensed";
+}
+
+footer #oversection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: "#f9f9f9";
+  padding-right: 2%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: gray;
+}
+
+footer #oversection #socialMediaIcons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer #oversection #socialMediaIcons figure {
+  width: 30%;
+}
+
+footer #oversection #socialMediaIcons figure img {
+  width: 100%;
+}
+
+footer #oversection .footerText h3 {
+  font-size: 25px;
+  letter-spacing: 2px;
+  margin-bottom: 5%;
+}
+
+footer #oversection .footerText p {
+  font-size: 20px;
+  margin-bottom: 3%;
+}
+
+footer #oversection .footerText a {
+  color: "#f9f9f9";
+  font-size: 20px;
+}
+
+footer #oversection .footerText div {
+  margin-bottom: 3%;
+  -webkit-text-decoration: underline "#f9f9f9";
+          text-decoration: underline "#f9f9f9";
+  color: "#f9f9f9";
+  font-size: 20px;
+}
+
+footer #undersection {
+  padding: 40px 0px;
+  background-color: gray;
+}
+
+footer #undersection p {
+  text-align: center;
+  color: "#f9f9f9";
+  font-size: 20px;
+}
+
+.topsearchsection {
+  font-family: "Roboto Condensed";
+}
+
+.topsearchsection .reserveheader {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: lighter;
+}
+
+.topsearchsection #filters {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.topsearchsection #filters label {
+  padding-right: 8px;
+}
+
+.topsearchsection #filters #search {
+  border: 2px solid black;
+  border-radius: 15px;
+}
+
+.bottomsearchsection {
+  font-family: "Roboto Condensed";
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.bottomsearchsection #searchresult {
+  padding-left: 15%;
+  font-size: 24px;
+}
+
+.bottomsearchsection #searchresult .resimg {
+  width: 200px;
+}
+
+.bottomsearchsection #searchresult .reservebutton {
+  margin-left: 1%;
+  font-size: 16px;
+  border: 2px solid black;
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: 15px;
+  font-family: "Roboto Condensed";
+}
+
+.bottomsearchsection #bookresult {
+  padding-left: 15%;
+  font-size: 24px;
+}
+
+.reservefooter {
+  margin-top: 29.5%;
+}
+/*# sourceMappingURL=main.css.map */
